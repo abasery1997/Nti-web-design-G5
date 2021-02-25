@@ -1,0 +1,144 @@
+body{
+font-family: 'Roboto', sans-serif;
+/* rtl , ltr */
+/* direction: rtl; */
+}
+p{
+    margin-left: 3%;
+}
+
+/* css selector ==> pesudo class , pesudo element */
+
+/* pesudo class ==> :hover , :focus , :disabled  , :first-child , nth-child() , a==> link , visited , hover , active*/
+
+button:hover{
+    background-color: lightslategray;
+    color: lightyellow;
+}
+button:focus{
+    background-color: peru;
+}
+input:hover{
+    /* background-color: olive; */
+}
+input:focus{
+    /* background-color: peru; */
+}
+input:disabled{
+    border: 2px solid red;
+}
+input:disabled:hover{
+    background: pink;
+}
+/* li:first-child{
+    background-color: plum;
+} */
+.first-ul li:first-child{
+    background-color: plum;
+}
+.second-ul li:first-child{
+    background-color: rosybrown;
+}
+.first-ul li:last-child{
+    background-color: seagreen;
+}
+.second-ul li:last-child{
+    background-color: silver;
+}
+.first-ul li:nth-child(3){
+    background-color: red;
+}
+input:required{
+    background-color: teal;
+}
+.card{
+  width: 200px;
+    margin: auto;
+  
+}
+.overlay{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(0 0 0 / 39%);
+    display: none;
+}
+.card-img:hover .overlay{
+    display: block;
+}
+.card:hover button{
+    background-color: teal;
+    color: white;
+}
+.card-img{
+    height: 200px;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+a:link{
+    color: turquoise;
+}
+a:visited{
+    color: yellowgreen;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: red;
+}
+
+/* pesudo Element ==> ::first-letter , ::first-line , ::selection  , ::placeholder , ::before , ::after*/
+
+h2{
+    width: 50%;
+    margin: auto;
+    background-color: #ccc;
+    color: white;
+    position: relative;
+}
+h2::first-line{
+    /* color: red; */
+}
+h2::first-letter{
+    font-size: 40px;
+    color: green;
+}
+
+h2::selection{
+    background-color: indianred;
+    color: white;
+}
+
+::selection{
+    background-color: indianred;
+    color: white;
+}
+:hover{
+    /* background-color: black; */
+}
+input{
+    color: red;
+}
+input::placeholder{
+    color: cadetblue;
+}
+
+h2::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -3%;
+    background-color: maroon;
+}
+
+h2::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+}
+
+
