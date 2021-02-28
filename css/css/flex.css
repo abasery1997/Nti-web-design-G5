@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+.bgColor{
+    background: #e0ece8;
+}
+.d-flex{
+    display: flex;
+    /* flex-wrap==> nowrap(default) , wrap , wrap-reverse */
+    /* flex-wrap: wrap; */
+    /* flex-direction ==> row (default) , row-reverse , column , column-reverse */
+    /* flex-direction: row; */
+    /* shorthand==> flex-wrap , flex-direction */
+    flex-flow: row wrap;
+    /* justify-content: ==> center , space-between , space-around , flex-start (default) , flex-end */
+    justify-content: center;
+    /* align-items==> stretch (default) , flex-end , flex-start , center */
+    align-items: center;
+    height: 600px;
+
+}
+.part1{
+    /* shorthand ==> background-color , background-image , background-position  */
+    background:lightgray;
+    /* width: 40%; */
+    /* order: 4; */
+}
+.part2{
+    background: lightgreen;
+    /* order: 3; */
+}
+.part3{
+    background: lightskyblue;
+    /* order: 2; */
+}
+.part4{
+    background: lightsalmon;
+    order: -1;
+    /* align-self ==>flex-start , flex-end , center .... */
+}
+.flex-part{
+    width: 20%;
+    padding: 2%;
+    /* margin-right: 2%; */
+}
+
+.custom-flex{
+    width: 40%;
+}
+.custom-flex img{
+width: 30%;
+}
+.display-flex{
+    display: flex;
+    /* opacity ==> 0:1 */
+    /* opacity: 0.5; */
+}
