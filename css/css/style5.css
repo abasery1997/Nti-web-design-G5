@@ -1,0 +1,165 @@
+/* points ==> overflow , filter  , table styling , transition , transform 2d , transform 3d (search ==> flip card) */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.overflow{
+    width: 300px;
+    height: 150px;
+    margin-top: 2%;
+    background-color: lightgray;
+    /* overflow ==> hidden , visible (default) , scroll , auto */
+    overflow: hidden; 
+    /* overflow-y => auto , scroll */
+    /* overflow-x ==> auto , scroll */
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 3%;
+    /* filter ==> grayscale , brightness , blur  , contrast*/
+    /* filter: grayscale(100%); */
+    /* filter: brightness(200%); */
+    /* filter: blur(35px); */
+    filter: contrast(200%);
+}
+.custom-div{
+    background-image: url(../Images/natural-img.jpg);
+    height: 200px;
+
+}
+
+table , th , td{
+    /* border: 2px solid black; */
+}
+table{
+    width: 100%;
+    margin-top: 2%;
+    border-collapse: collapse;
+}
+
+td , th{
+    padding: 2%;
+    border-bottom: 1px solid blue;
+}
+th{
+    background-color: lightgray;
+}
+tr:nth-child(3){
+    /* background-color: olive; */
+    /* color: white; */
+}
+tr:nth-child(odd){
+    background-color: lightskyblue;
+}
+
+tr:hover{
+    background-color: papayawhip;
+}
+#table-responsive{
+    /* overflow-x: auto; */
+    width: 50%;
+}
+.part1{
+    background: lightsteelblue;
+    height: 200px;
+    width: 200px;
+    /* transition-duration: 1s;
+    transition-delay: 2s; 
+    transition-property: all; */
+    /* transition-timing-function ==> search */
+    transition: background 2s , height 5s;
+    /* transition: all 2s; */
+}
+.part1:hover{
+    background: maroon;
+    font-size: 25px;
+    color: white;
+    height: 400px;
+}
+
+.transform{
+    margin: 20% auto;
+    width: 300px;
+    height: 300px;
+    background-color: mediumaquamarine;
+    transition: transform 1s;
+   
+}
+body{
+    perspective: 1000px;
+}
+.transform:hover{
+    /* transform ==> translate , rotate , scale */
+
+    /* translate ==> x-axis , y-axis  */
+    /* rotate==> deg  */
+
+    /* transform: translate(50px , 100px); */
+    /* transform:  translateX(-100px); */
+    /* transform:  translateY(-100px); */
+    /* transform: rotate(180deg); */
+    /* transform: rotate(-30deg);
+    transform: translateX(100px); */
+    /* transform:  rotate(90deg) translateX(300px); */
+    
+    /* scaleX==> width */
+    /* transform: scaleX(0);  */
+    /* scaleY==> height */
+    /* scale ==> width , height */
+    /* transform: scaleY(2); */
+    /* transform: scale(0.5 , 2); */
+
+    /* skew ==> deg */
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+    /* transform: skew(20deg , 40deg); */
+    /* transform: scale(1.5 , 0.5) translateX(200px); */
+
+    /* matrix ==> scaleX , SkewX , SkewY , scaleY ,TranslateX , TranslateY */
+    /* transform: matrix(1 , 0 , 0 , 2 , 0 ,0); */
+
+
+    /* transform: scaleY(2);
+    transform: scaleX(0); */
+    /* transform: scale(2 , 0.5); */
+
+
+    /* transform: rotateX(70deg); */
+    transform: rotateY(90deg);
+}
+
+.part2 , .part3{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    background: navy;
+    transition: transform 1s;
+}
+.part3{
+    background: olive;
+}
+.part2:hover{
+    /* width: 500px; */
+    transform: scaleX(2);
+}
+
+
+.bg-img{
+    background-image: url(../Images/natural-img.jpg);
+    height: 400px;
+    background-size: 100% 100%;
+    color: white;
+}
+.overlay{
+    height: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 59%);
+}
