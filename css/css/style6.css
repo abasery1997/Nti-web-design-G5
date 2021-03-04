@@ -1,0 +1,86 @@
+/* Points ==> responsive , animation */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item1{
+    width: 30%;
+    background-color: lightblue;
+}
+.flex-item2{
+    width: 30%;
+    background-color: lightcoral;
+}
+.flex-item3{
+    width: 30%;
+    background-color: lightgrey;
+}
+
+.custom-div{
+    width: 200px;
+    /* margin: 5% auto; */
+    height: 200px;
+    background: lightsalmon;
+    display: inline-block;
+    color: white;
+    /* animation-name: coloredDiv ;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: coloredDiv 5s infinite reverse;
+}
+.custom-div2{
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+    display: inline-block;
+}
+
+@keyframes coloredDiv {
+    /* from{
+        background: lightseagreen;
+    }
+
+    to{
+        background: maroon;
+        transform: translateY(200px);
+    } */
+
+
+    0%{
+        background: maroon;
+        width: 400px;
+        /* transform: scaleX(2); */
+    }
+    25%{
+        /* transform: translateX(200px); */
+        background: mediumaquamarine;
+    }
+    50%{
+        transform: translateY(200px);
+        background: mediumvioletred;
+    }
+    75%{
+        transform: translateX(0px);
+        background: orange;
+        
+    }
+    100%{
+        transform: translateY(0px)  rotate(180deg);
+        background: olive;
+    }
+}

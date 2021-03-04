@@ -1,0 +1,64 @@
+
+
+/* 0 ==> 767 */
+/* @media screen and  (max-width:767px){
+    .flex-item1{
+        width: 30%;
+        color: white;
+        font-size: 20px;
+    }
+    .flex-item2{
+        background-color: lightseagreen;
+        color: white;
+    }
+    
+} */
+
+/* 0 ==> 567 */
+/* @media screen and (max-width:567px){
+    .flex-item1{
+        width: 50%;
+        color: black;
+    }
+} */
+/* 0 ==> 360 */
+/* @media screen and (max-width:360px){
+    .flex-item1{
+        width: 100%;
+    }
+    .flex-item2 , .flex-item3 {
+        width: 100%;
+    }
+} */
+
+
+/* Another way */
+
+/* 361 ==> 567 */
+@media (min-width:361px) and (max-width:567px){
+    .flex-item1{
+        color: white;
+        width: 50%;
+        display: none;
+    }
+}
+
+/* 0==>360 */
+@media (min-width:0px) and (max-width:360px){
+    .flex-item1{
+        width: 100%;
+    }
+}
+
+@media (min-width:567px) and (max-width:767px){
+    .flex-item1{
+        background-color: maroon;
+        color: white;
+    }
+}
+
+
+
+/* @media print{
+
+} */
