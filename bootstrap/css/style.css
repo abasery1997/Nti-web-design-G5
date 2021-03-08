@@ -7,3 +7,22 @@
 .custom-border-color{
     border-color: darkgoldenrod;
 }
+
+/* bootstrap 2nd day */
+
+.custom-height{
+    height: 300px;
+    /* width: 300px; */
+}
+
+.carousel-item img{
+    height: 300px;
+}
+#carouselExampleIndicators2 .carousel-indicators [data-bs-target]{
+    width: 11px ;
+    height: 11px;
+}
+/* .carousel-indicators button {
+    width: 11px !important;
+    height: 11px !important;
+} */
