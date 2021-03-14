@@ -26,3 +26,23 @@
     width: 11px !important;
     height: 11px !important;
 } */
+
+
+/* Bootstrap 3rd day */
+.custom-width-height{
+    width: 30px;
+    height: 30px;
+    right: -40px;
+    top: -17px;
+}
+.custom-nav-tabs .nav-item.show .nav-link, .custom-nav-tabs .nav-link.active {
+    color: white;
+    background-color: black;}
+
+    /* slider custom css */
+
+ .owl-nav{
+     text-align: center;
+     font-size: 40px;
+     color: red;
+ }   
