@@ -1,0 +1,30 @@
+body{
+    height: 10000px;
+}
+.myDivClass2{
+    color: red;
+    border: 3px solid Olive;
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.myDivClass{
+    background-color: lightgray;
+}
+#scrollDiv{
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    margin: auto;
+}
+#topBtn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-size: 40px;
+    color: red;
+    display: none;
+}

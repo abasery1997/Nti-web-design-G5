@@ -219,6 +219,7 @@ var user3 = {
         return currentYear - this.birthYear
     }
 }
+user3.firstName
 var user4 = {
     firstName: "hazem",
     lastName: "mohamed",
@@ -230,6 +231,7 @@ var user4 = {
         return currentYear - this.birthYear
     }
 }
+
 
 
 var users = [
@@ -270,13 +272,13 @@ var users = [
 ]
 
 var obj = {
-    firstName : "test" ,
-    lastName : "test" , 
-    familyName : "test" 
+    firstName: "test",
+    lastName: "test",
+    familyName: "test"
 }
 
 console.log(users)
-users.forEach(item=>{
+users.forEach(item => {
     console.log(item.firstName)
 })
 users.push(obj)
@@ -288,4 +290,3 @@ console.table(users)
 //         ==> editUserBalanceById(id , newBalance)
 //         ==> deleteUserById(id)
 //         ==> showUsers()
-
