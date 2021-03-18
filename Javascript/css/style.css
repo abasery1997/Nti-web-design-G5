@@ -28,3 +28,12 @@ body{
     color: red;
     display: none;
 }
+li{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.custom-li{
+    color: red;
+    background-color: lightgray;
+}

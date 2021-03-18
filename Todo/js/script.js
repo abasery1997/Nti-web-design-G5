@@ -56,7 +56,6 @@ function showtasks(){
             // handleRemoveBtn(i)
             handleAction(i , 'remove')
         })
-
     })
 }
 
